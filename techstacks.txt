@@ -1,0 +1,14 @@
+1. Data Collection → Kaggle API download
+2. Data Exploration → EDA, visualization
+3. Data Preprocessing → Encoding, scaling, splitting
+4. Model Selection → Choose algorithms
+5. Model Training → Fit on training data
+6. Hyperparameter Tuning → Grid/Random search
+7. Model Evaluation → Metrics, confusion matrix
+8. Model Comparison → Select best performer
+9. Model Persistence → Save with pickle
+10. Web Interface → Flask app development
+11. API Integration → Connect model to UI
+12. Testing → Validation with test cases
+13. Deployment → Production server
+14. Monitoring → Track performance

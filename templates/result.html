@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .result-box {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .prediction {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .confidence {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .patient-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .patient-info h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Prediction Result</h1>
+        
+        <div class="result-box">
+            <h2>Recommended Drug</h2>
+            <div class="prediction">{{ prediction }}</div>
+            <div class="confidence">Confidence: {{ confidence }}%</div>
+        </div>
+
+        <div class="patient-info">
+            <h3>📋 Patient Information</h3>
+            <table>
+                <tr>
+                    <td><strong>Age:</strong></td>
+                    <td>{{ age }} years</td>
+                </tr>
+                <tr>
+                    <td><strong>Sex:</strong></td>
+                    <td>{{ sex }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Blood Pressure:</strong></td>
+                    <td>{{ bp }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Cholesterol:</strong></td>
+                    <td>{{ cholesterol }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Na/K Ratio:</strong></td>
+                    <td>{{ na_to_k }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <a href="/" class="back-btn">← Make Another Prediction</a>
+    </div>
+</body>
+</html>
