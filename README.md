@@ -2,3 +2,5 @@ Drug Effectiveness Prediction system built using machine learning on the Kaggle 
 
 Screenshots
 <img width="1482" height="875" alt="image" src="https://github.com/user-attachments/assets/c406c8d0-9b5d-4dc7-8c5d-0c44a161f2a9" />
+<img width="1512" height="852" alt="image" src="https://github.com/user-attachments/assets/a7324d53-18ac-433c-b48b-6287bf762647" />
+
